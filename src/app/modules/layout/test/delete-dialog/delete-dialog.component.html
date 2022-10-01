@@ -1,0 +1,5 @@
+<h2>Confirm Delete</h2>
+<div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">No Thanks</button>
+    <button mat-button (click)="onDelete()" [mat-dialog-close]="data.name" style="background-color: red;" cdkFocusInitial>Delete</button>
+  </div>

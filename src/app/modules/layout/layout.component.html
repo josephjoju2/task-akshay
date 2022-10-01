@@ -1,0 +1,13 @@
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+
+<h2>Add then check and replace with a final table</h2>
+<p>Try to resize the browser window to see the responsive effect.</p>
+
+<div class="navbar">
+  <a routerLink="table" class="active" [ngClass]="{'active': selectedItem == 1}" (click)="listClick(1)"><i class="fa fa-fw fa-home"></i> Table</a> 
+  <a routerLink="test" [ngClass]="{'active': selectedItem == 2}" (click)="listClick(2)"><i class="fa fa-fw fa-search"></i> Test</a> 
+  <a ><i class="fa fa-fw fa-envelope"></i> Final</a> 
+</div>
+
+<router-outlet></router-outlet>
